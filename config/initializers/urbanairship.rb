@@ -4,4 +4,4 @@ Urbanairship.master_secret = ENV['ua-mastersecret']
 Urbanairship.logger = Rails.logger
 Urbanairship.request_timeout = 5 # default
 
-logger.info 'UA initialized!'
+Rails.logger.info 'UA initialized!'
