@@ -39,7 +39,7 @@ class SensorsController < ApplicationController
   # PATCH/PUT /sensors/1
   # PATCH/PUT /sensors/1.json
   def update
-    @sensor = Sensor.find(params[:id])
+    @sensor = Sensor.find_by_sensor_id(params[:id])
 
     if @sensor.update_attributes(params[:sensor])
       head :no_content
@@ -51,7 +51,7 @@ class SensorsController < ApplicationController
   # DELETE /sensors/1
   # DELETE /sensors/1.json
   def destroy
-    @sensor = Sensor.find(params[:id])
+    @sensor = Sensor.find_by_sensor_id(params[:id])
     @sensor.destroy
 
     head :no_content
