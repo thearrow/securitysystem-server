@@ -1,7 +1,6 @@
 class Sensor < ActiveRecord::Base
   attr_accessible :client_apid, :enabled, :name, :sensor_id, :tripped
 
-
   def enabled?
     self.enabled
   end
@@ -19,6 +18,5 @@ class Sensor < ActiveRecord::Base
     end
     success
   end
-
 
 end

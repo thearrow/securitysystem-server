@@ -1,12 +1,11 @@
 SecuritySystemServer::Application.routes.draw do
+  resources :sensors, except: :edit
+
+  match 'sensors/:id/trip' => 'sensors#trip'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  match 'sensor/:id/trip' => 'sensor#trip'
-  match 'sensor/create' => 'sensor#create'
-  match 'sensor/list' => 'sensor#list'
-
-  root :to => 'application#home'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

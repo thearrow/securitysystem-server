@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sensor_id: 1
+  name: MyString
+  enabled: false
+  tripped: false
+  client_apid: MyString
+
+two:
+  sensor_id: 1
+  name: MyString
+  enabled: false
+  tripped: false
+  client_apid: MyString
