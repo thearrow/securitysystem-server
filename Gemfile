@@ -11,6 +11,7 @@ gem 'urbanairship'
 gem 'thin'
 gem 'multi_json'
 gem 'oj'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'better_errors'
