@@ -4,7 +4,7 @@ class SensorsController < ApplicationController
   def index
     @sensors = Sensor.all
 
-    render json: @sensors
+    render json: @sensors.sort! {|a,b| a.name <=> b.name}
   end
 
   # GET /sensors/1
