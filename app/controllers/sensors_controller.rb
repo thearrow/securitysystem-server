@@ -1,4 +1,5 @@
 class SensorsController < ApplicationController
+  include ActionController::HttpAuthentication::Basic::ControllerMethods
   http_basic_authenticate_with name: ENV['api-user'], password: ENV['api-pass']
   # GET /sensors
   # GET /sensors.json
