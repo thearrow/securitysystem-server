@@ -1,4 +1,4 @@
-== Raspberry Pi Laser-Tripwire System
+## Raspberry Pi Laser-Tripwire System
 
 Server component of the security system project.
 
